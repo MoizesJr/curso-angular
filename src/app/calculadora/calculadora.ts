@@ -10,11 +10,12 @@ import { FormsModule } from '@angular/forms';
 })
 export class Calculadora {
 
-  numero1: number = 0;
-  numero2: number = 0;
+  volSulfato: number = 0;
+  fatorCorrecao: number = 0;
+  massaGordura: number = 0;
   resultado: number = 0;
 
   calcularResultado(){
-    this.resultado = this.numero1 + this.numero2;
+     this.resultado = (this.volSulfato * 0.01 * this.fatorCorrecao * 1000) / (this.massaGordura * 2);
   }
 }
