@@ -17,5 +17,6 @@ export class Calculadora {
 
   calcularResultado(){
      this.resultado = (this.volSulfato * 0.01 * this.fatorCorrecao * 1000) / (this.massaGordura * 2);
+     this.resultado = parseFloat(this.resultado.toFixed(5));
   }
 }
